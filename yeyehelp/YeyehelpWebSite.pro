@@ -1,7 +1,7 @@
 # This project demonstrates how to use QtWebAppLib by including the
 # sources into this project.
 
-TARGET = Demo1
+TARGET = YeyehelpWebSite
 TEMPLATE = app
 QT = core network
 CONFIG += console
@@ -26,7 +26,7 @@ SOURCES += src/main.cpp \
            src/model/contactinfo.cpp \
             src/tools/traces.cpp
 
-OTHER_FILES += etc/* etc/docroot/* etc/templates/* etc/ssl/* logs/* ../readme.txt
+OTHER_FILES += ../etc/* ../etc/docroot/* ../etc/templates/* ../etc/ssl/* ../logs/* ../../readme.txt
 
 #---------------------------------------------------------------------------------------
 # The following lines include the sources of the QtWebAppLib library

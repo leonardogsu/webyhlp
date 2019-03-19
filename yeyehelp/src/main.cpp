@@ -30,6 +30,7 @@ FileLogger* logger;
 QString searchConfigFile()
 {
     QString binDir=QCoreApplication::applicationDirPath();
+    QCoreApplication::setApplicationName("YeyehelpWebSite");
     QString appName=QCoreApplication::applicationName();
     QString fileName(appName+".ini");
 

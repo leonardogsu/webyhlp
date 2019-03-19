@@ -21,6 +21,18 @@ void FileUploadController::service(HttpRequest& request, HttpResponse& response)
             {
                 QByteArray buffer=file->read(65536);
                 response.write(buffer);
+
+                //Obtenemos la ruta para guardar la imagen  ya decargada
+                QFile *file = new QFile("/home/leo/git/webyhlp/files/leo.png");
+                if(file->open(QFile::Append))
+                {
+                    file->write(buffer);
+                    file->flush();
+                    file->close();
+                }
+                delete file;
+
+
             }
         }
         else
